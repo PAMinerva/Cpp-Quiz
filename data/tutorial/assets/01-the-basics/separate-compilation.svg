@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" role="img" aria-labelledby="title desc">
+  <title id="title">Separate compilation with a shared header</title>
+  <desc id="desc">Vector.h supplies the interface shared by user.cpp and Vector.cpp, which can be compiled separately.</desc>
+  <rect width="900" height="310" fill="#0f172a"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#60a5fa"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+      .small{font-size:18px;fill:#cbd5e1}
+      .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:16}
+      .iface{stroke:#2dd4bf}
+      .arrow{stroke:#60a5fa;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="box iface" x="330" y="40" width="240" height="80"/>
+  <text x="450" y="78" text-anchor="middle" font-size="26">Vector.h</text>
+  <text class="small" x="450" y="105" text-anchor="middle">Vector interface</text>
+  <rect class="box" x="90" y="190" width="260" height="80"/>
+  <text x="220" y="228" text-anchor="middle" font-size="24">user.cpp</text>
+  <text class="small" x="220" y="255" text-anchor="middle">uses Vector</text>
+  <rect class="box" x="550" y="190" width="260" height="80"/>
+  <text x="680" y="228" text-anchor="middle" font-size="24">Vector.cpp</text>
+  <text class="small" x="680" y="255" text-anchor="middle">defines Vector</text>
+  <line class="arrow" x1="390" y1="122" x2="260" y2="185"/>
+  <line class="arrow" x1="510" y1="122" x2="640" y2="185"/>
+</svg>

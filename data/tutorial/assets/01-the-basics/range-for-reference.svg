@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Range-for copy versus reference</title>
+  <desc id="desc">auto x copies each element; auto&amp; x refers to each element and can modify it.</desc>
+  <rect width="900" height="280" fill="#0f172a"/>
+  <style>
+    text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+    .small{font-size:18px;fill:#cbd5e1}
+    .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:16}
+    .ref{stroke:#2dd4bf}
+    .copy{stroke:#818cf8}
+  </style>
+  <text x="450" y="42" text-anchor="middle" font-size="28">for (auto x : v) vs for (auto&amp; x : v)</text>
+  <rect class="box copy" x="60" y="80" width="350" height="150"/>
+  <text x="235" y="120" text-anchor="middle" font-size="24">auto x</text>
+  <text class="small" x="95" y="160">x receives a copy of each element</text>
+  <text class="small" x="95" y="195">++x changes only the copy</text>
+  <rect class="box ref" x="490" y="80" width="350" height="150"/>
+  <text x="665" y="120" text-anchor="middle" font-size="24">auto&amp; x</text>
+  <text class="small" x="525" y="160">x refers to the actual element</text>
+  <text class="small" x="525" y="195">++x modifies the array/vector</text>
+</svg>

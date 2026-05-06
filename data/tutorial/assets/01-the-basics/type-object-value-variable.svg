@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Type, object, value, and variable</title>
+  <desc id="desc">A variable is a named object; an object is memory holding a value interpreted by a type.</desc>
+  <rect width="900" height="280" fill="#0f172a"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#38bdf8"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#e2e8f0;font-weight:700}
+      .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:18}
+      .accent{stroke:#2dd4bf}
+      .small{fill:#cbd5e1;font-size:18px;font-weight:600}
+      .arrow{stroke:#38bdf8;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="box accent" x="40" y="70" width="180" height="95"/>
+  <text x="130" y="112" text-anchor="middle" font-size="28">type</text>
+  <text class="small" x="130" y="142" text-anchor="middle">int, char, double</text>
+  <line class="arrow" x1="225" y1="118" x2="315" y2="118"/>
+  <rect class="box" x="330" y="70" width="220" height="95"/>
+  <text x="440" y="112" text-anchor="middle" font-size="28">value</text>
+  <text class="small" x="440" y="142" text-anchor="middle">bits interpreted by type</text>
+  <line class="arrow" x1="555" y1="118" x2="645" y2="118"/>
+  <rect class="box" x="660" y="70" width="200" height="95"/>
+  <text x="760" y="112" text-anchor="middle" font-size="28">object</text>
+  <text class="small" x="760" y="142" text-anchor="middle">memory holding value</text>
+  <rect class="box accent" x="330" y="190" width="220" height="60"/>
+  <text x="440" y="228" text-anchor="middle" font-size="24">variable = named object</text>
+</svg>

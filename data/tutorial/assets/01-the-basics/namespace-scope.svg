@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Namespace scope</title>
+  <desc id="desc">Names inside My_code do not clash with names inside std or the global namespace.</desc>
+  <rect width="900" height="280" fill="#0f172a"/>
+  <style>
+    text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+    .small{font-size:18px;fill:#cbd5e1}
+    .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:18}
+    .mine{stroke:#2dd4bf}
+    .std{stroke:#818cf8}
+  </style>
+  <rect class="box mine" x="60" y="60" width="360" height="170"/>
+  <text x="240" y="100" text-anchor="middle" font-size="26">namespace My_code</text>
+  <text class="small" x="100" y="145">complex</text>
+  <text class="small" x="100" y="180">sqrt(complex)</text>
+  <text class="small" x="100" y="215">My_code::main()</text>
+  <rect class="box std" x="480" y="60" width="360" height="170"/>
+  <text x="660" y="100" text-anchor="middle" font-size="26">namespace std</text>
+  <text class="small" x="520" y="145">std::cout</text>
+  <text class="small" x="520" y="180">std::complex</text>
+  <text class="small" x="520" y="215">standard library names</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Array and pointer memory</title>
+  <desc id="desc">Pointer p stores the address of v[3], and *p names the object at that address.</desc>
+  <rect width="900" height="260" fill="#0f172a"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#fbbf24"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+      .small{font-size:18px;fill:#cbd5e1}
+      .cell{fill:#1e293b;stroke:#64748b;stroke-width:2}
+      .target{fill:#422006;stroke:#fbbf24}
+      .arrow{stroke:#fbbf24;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <text x="90" y="72" font-size="26">char* p = &amp;v[3]</text>
+  <rect class="cell" x="80" y="95" width="95" height="50" rx="10"/>
+  <text x="128" y="128" text-anchor="middle" font-size="22">p</text>
+  <line class="arrow" x1="175" y1="120" x2="490" y2="170"/>
+  <text class="small" x="420" y="102">p points to the fourth element</text>
+  <text x="120" y="188" font-size="24">v:</text>
+  <g transform="translate(165 150)">
+    <rect class="cell" x="0" y="0" width="90" height="65"/>
+    <rect class="cell" x="90" y="0" width="90" height="65"/>
+    <rect class="cell" x="180" y="0" width="90" height="65"/>
+    <rect class="cell target" x="270" y="0" width="90" height="65"/>
+    <rect class="cell" x="360" y="0" width="90" height="65"/>
+    <rect class="cell" x="450" y="0" width="90" height="65"/>
+    <text x="45" y="40" text-anchor="middle">v[0]</text>
+    <text x="135" y="40" text-anchor="middle">v[1]</text>
+    <text x="225" y="40" text-anchor="middle">v[2]</text>
+    <text x="315" y="40" text-anchor="middle">v[3]</text>
+    <text x="405" y="40" text-anchor="middle">v[4]</text>
+    <text x="495" y="40" text-anchor="middle">v[5]</text>
+  </g>
+</svg>

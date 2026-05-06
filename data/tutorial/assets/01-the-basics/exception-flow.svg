@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Exception flow</title>
+  <desc id="desc">An out-of-range access throws an exception, unwinds callers, and reaches a matching catch handler.</desc>
+  <rect width="900" height="280" fill="#0f172a"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#fb7185"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+      .small{font-size:18px;fill:#cbd5e1}
+      .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:16}
+      .danger{stroke:#fb7185}
+      .ok{stroke:#2dd4bf}
+      .arrow{stroke:#fb7185;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="box danger" x="55" y="95" width="235" height="90"/>
+  <text x="173" y="133" text-anchor="middle" font-size="23">operator[]</text>
+  <text class="small" x="173" y="163" text-anchor="middle">throw out_of_range</text>
+  <line class="arrow" x1="295" y1="140" x2="405" y2="140"/>
+  <rect class="box" x="420" y="95" width="185" height="90"/>
+  <text x="512" y="133" text-anchor="middle" font-size="23">call stack</text>
+  <text class="small" x="512" y="163" text-anchor="middle">unwinds</text>
+  <line class="arrow" x1="610" y1="140" x2="720" y2="140"/>
+  <rect class="box ok" x="735" y="95" width="120" height="90"/>
+  <text x="795" y="133" text-anchor="middle" font-size="23">catch</text>
+  <text class="small" x="795" y="163" text-anchor="middle">handler</text>
+</svg>

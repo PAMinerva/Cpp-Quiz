@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">static_assert compile-time check</title>
+  <desc id="desc">static_assert checks a constant expression and reports a compiler error if it is false.</desc>
+  <rect width="900" height="260" fill="#0f172a"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#60a5fa"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+      .small{font-size:18px;fill:#cbd5e1}
+      .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:16}
+      .ok{stroke:#2dd4bf}
+      .fail{stroke:#fb7185}
+      .arrow{stroke:#60a5fa;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="box" x="45" y="95" width="330" height="70"/>
+  <text x="210" y="137" text-anchor="middle" font-size="22">static_assert(A, message)</text>
+  <line class="arrow" x1="385" y1="130" x2="500" y2="130"/>
+  <rect class="box ok" x="520" y="45" width="310" height="70"/>
+  <text x="675" y="88" text-anchor="middle" font-size="22">A is true: compile continues</text>
+  <rect class="box fail" x="520" y="155" width="310" height="70"/>
+  <text x="675" y="198" text-anchor="middle" font-size="22">A is false: compiler error</text>
+</svg>

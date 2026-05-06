@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">Core language and standard library</title>
+  <desc id="desc">C++ standard entities include core language features and standard library components.</desc>
+  <rect width="900" height="300" fill="#0f172a"/>
+  <style>
+    text{font-family:Inter,Arial,sans-serif;fill:#f8fafc;font-weight:700}
+    .label{font-size:28px}
+    .item{font-size:19px;fill:#cbd5e1;font-weight:600}
+    .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:20}
+    .core{stroke:#2dd4bf}
+    .lib{stroke:#818cf8}
+  </style>
+  <text class="label" x="450" y="50" text-anchor="middle">ISO C++ standard entities</text>
+  <rect class="box core" x="60" y="90" width="360" height="165"/>
+  <text class="label" x="240" y="130" text-anchor="middle">Core language</text>
+  <text class="item" x="100" y="170">built-in types: char, int</text>
+  <text class="item" x="100" y="205">statements: for, while</text>
+  <text class="item" x="100" y="240">expressions and declarations</text>
+  <rect class="box lib" x="480" y="90" width="360" height="165"/>
+  <text class="label" x="660" y="130" text-anchor="middle">Standard library</text>
+  <text class="item" x="520" y="170">containers: vector, map</text>
+  <text class="item" x="520" y="205">I/O: cout, getline()</text>
+  <text class="item" x="520" y="240">ordinary C++ code</text>
+</svg>

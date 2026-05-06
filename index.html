@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C++ Quiz Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">C++ Quiz Lab</p>
+        <h1>C++ Practice Studio</h1>
+        <p class="subtitle">
+          Choose a module, search by topic, or revisit missed questions with focused practice.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button class="ghost-button" id="resetProgressBtn" type="button">Reset progress</button>
+      </div>
+    </header>
+
+    <section class="stats-grid" aria-live="polite">
+      <article class="stat-card">
+        <span class="stat-label">Overall score</span>
+        <strong id="overallScore">0%</strong>
+        <small id="overallDetail">No completed quizzes</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Completed quizzes</span>
+        <strong id="completedCount">0</strong>
+        <small>based on your best quiz results</small>
+      </article>
+      <article class="stat-card warning">
+        <span class="stat-label">Questions to review</span>
+        <strong id="wrongCount">0</strong>
+        <small id="wrongDetail">0 recovered</small>
+      </article>
+    </section>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="Quiz navigation">
+        <section class="panel category-panel">
+          <div class="panel-header compact">
+            <div>
+              <p class="eyebrow">Categories</p>
+              <h2>Explore Modules</h2>
+            </div>
+          </div>
+          <div id="categoryTree" class="category-tree loading">Loading categories...</div>
+        </section>
+
+        <section class="panel options-panel">
+          <div class="panel-header compact">
+            <div>
+              <p class="eyebrow">Smart Review</p>
+              <h2>Review Options</h2>
+            </div>
+          </div>
+          <label class="check-row">
+            <input type="checkbox" id="includeWrongToggle" />
+            <span>Include active misses in the selected quiz</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" id="onlyWrongToggle" />
+            <span>Use only missed questions for the selection</span>
+          </label>
+          <button id="reviewWrongBtn" class="secondary-button full" type="button">Review all missed questions</button>
+        </section>
+
+        <section class="panel search-panel">
+          <div class="panel-header compact">
+            <div>
+              <p class="eyebrow">Global Search</p>
+              <h2>Find Questions</h2>
+            </div>
+          </div>
+          <form id="searchForm" class="search-form">
+            <label class="sr-only" for="searchInput">Search by keyword or tag</label>
+            <input id="searchInput" type="search" placeholder="e.g. for, pointers, vector..." autocomplete="off" />
+            <button type="submit">Search</button>
+          </form>
+          <p class="hint">Search scans questions, answers, explanations, and tags.</p>
+        </section>
+      </aside>
+
+      <section class="quiz-stage" id="quizStage" aria-live="polite">
+        <div class="welcome-card">
+          <p class="eyebrow">Ready?</p>
+          <h2>Choose a quiz or start the tutorial</h2>
+          <p>
+            The tutorial path is expanded by default and moves from core concepts to more advanced topics.
+          </p>
+          <button type="button" class="primary-button" data-start-category="tutorial">Start tutorial path</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

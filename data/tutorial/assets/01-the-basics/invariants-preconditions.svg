@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">Preconditions and invariants</title>
+  <desc id="desc">Function preconditions constrain arguments; class invariants describe valid object state.</desc>
+  <rect width="900" height="300" fill="#0f172a"/>
+  <style>
+    text{font-family:Inter,Arial,sans-serif;fill:#e5e7eb;font-weight:700}
+    .small{font-size:18px;fill:#cbd5e1}
+    .box{fill:#1e293b;stroke:#64748b;stroke-width:2;rx:18}
+    .left{stroke:#fbbf24}
+    .right{stroke:#2dd4bf}
+  </style>
+  <rect class="box left" x="60" y="70" width="360" height="170"/>
+  <text x="240" y="110" text-anchor="middle" font-size="26">precondition</text>
+  <text class="small" x="100" y="155">index must be in [0:size())</text>
+  <text class="small" x="100" y="190">check arguments before acting</text>
+  <rect class="box right" x="480" y="70" width="360" height="170"/>
+  <text x="660" y="110" text-anchor="middle" font-size="26">class invariant</text>
+  <text class="small" x="520" y="155">elem points to sz doubles</text>
+  <text class="small" x="520" y="190">constructor establishes valid state</text>
+</svg>
